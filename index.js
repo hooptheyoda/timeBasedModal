@@ -27,12 +27,15 @@ function isFName(input){
 function isLName(input){
   return input.length < 14;
 }
+// function isEmail(input){
+//   if (email.val().indexOf('@') >= 0) {
+//          return input.length < 30;
+//     } else {
+//         return  input.length < 5;
+//     }
+// }
 function isEmail(input){
-  if (input.val().indexOf('@') >= 0) {
-         return true;
-    } else {
-        return false;
-    }
+  return input.length < 30;
 }
 
 function validateForm(event){
