@@ -29,9 +29,9 @@ function isLName(input){
 }
 function isEmail(input){
   if (input.val().indexOf('@') >= 0) {
-         return input.val(1);
+         return true;
     } else {
-        return input.val(0);
+        return false;
     }
 }
 
